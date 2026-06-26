@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion";
 import Button from "@/components/ui/Button";
+import Image from "next/image";
 
 const navLinks = [
   { label: "Features", href: "#features" },
@@ -28,12 +29,10 @@ export default function Navbar() {
     >
       <div className="max-w-[1100px] mx-auto px-6 h-[60px] flex items-center justify-between">
         <a
-          href="#"
+          href="/"
           className="flex items-center gap-[10px] font-display font-bold text-[1.1rem] tracking-tight text-[var(--text-1)]"
         >
-          <div className="w-7 h-7 rounded-[7px] bg-gradient-to-br from-[var(--brand)] to-violet-400 flex items-center justify-center text-sm">
-            🎮
-          </div>
+          <Image src="/icon.png" alt="Playlite" width={28} height={28} />
           Playlite
         </a>
         <ul className="hidden md:flex items-center gap-8 list-none">

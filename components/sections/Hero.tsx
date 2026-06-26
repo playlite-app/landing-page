@@ -2,7 +2,7 @@
 
 import { motion } from "framer-motion";
 import Button from "@/components/ui/Button";
-import AppDemo from "@/components/ui/Appdemo";
+import AppDemo from "@/components/ui/AppDemo";
 
 export default function Hero() {
   return (
