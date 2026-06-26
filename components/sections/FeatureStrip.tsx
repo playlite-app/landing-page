@@ -3,7 +3,7 @@ import Reveal from "@/components/ui/Reveal";
 const strips = [
   {
     label: "Privacy",
-    heading: "100% offline,\nalways.",
+    heading: "Offline first.",
     text: "Your library lives on your machine. No accounts, no telemetry, no cloud dependency.",
   },
   {

@@ -1,6 +1,4 @@
 import Reveal from "@/components/ui/Reveal";
-import WishlistVisual from "@/components/ui/WishlistVisual";
-import GameDetailsVisual from "@/components/ui/GameDetailsVisual";
 
 type FeatureBlockProps = {
   tag: string;
@@ -56,6 +54,14 @@ function FeatureBlock({
   );
 }
 
+function ScreenshotVisual({ src, alt }: { src: string; alt: string }) {
+  return (
+    <div className="rounded-[20px] border border-[var(--border)] bg-[var(--bg-card)] overflow-hidden shadow-[0_20px_60px_rgba(0,0,0,0.4)]">
+      <img src={src} alt={alt} className="w-full block" />
+    </div>
+  );
+}
+
 const features: FeatureBlockProps[] = [
   {
     tag: "Wishlist",
@@ -65,23 +71,83 @@ const features: FeatureBlockProps[] = [
     bullets: [
       "Search by genre, theme, and playstyle",
       "Browse rich metadata before you add",
-      "Sync your wishlist instantly to your library on purchase",
     ],
-    visual: <WishlistVisual />,
+    visual: (
+      <ScreenshotVisual
+        src="/assets/wishlist-search.png"
+        alt="Wishlist search — find games by genre, mood and mechanics"
+      />
+    ),
   },
   {
     tag: "Game Details",
     heading: "Everything about<br />a game, in one place.",
     description:
-      "The game details window opens into four tabs: media, similar games, technical specs, and your personal notes. Data pulled live from PCGamingWiki — so you know exactly what you're installing before you hit download.",
+      "The game details window opens into four tabs: description, media, similar games and technical specs. So you know exactly what you're installing before you hit download.",
     bullets: [
       "Screenshots and trailers in the Media tab",
       "System requirements and language support from PCGamingWiki",
-      "Controller compatibility at a glance",
       "Similar games recommended from your own library context",
     ],
-    visual: <GameDetailsVisual />,
+    visual: (
+      <ScreenshotVisual
+        src="/assets/game-details.png"
+        alt="Game details — description, media, similar games and tech specs in one place"
+      />
+    ),
     reverse: true,
+  },
+  {
+    tag: "Playlist",
+    heading: "Queue up your<br />next adventure.",
+    description:
+      "Build an ordered playlist of games you want to play next. Drag to reorder, launch directly from the queue, and never lose track of what you were going to play.",
+    bullets: [
+      "Drag-and-drop reordering",
+      "Launch games directly from the playlist",
+      "Keep your backlog organized and intentional",
+    ],
+    visual: (
+      <ScreenshotVisual
+        src="/assets/playlist.png"
+        alt="Playlist — queue up and reorder your next games"
+      />
+    ),
+  },
+  {
+    tag: "Free Games",
+    heading: "Never miss a<br />free game again.",
+    description:
+      "Playlite tracks limited-time giveaways from Epic Games, Steam, and other storefronts in one place. Claim what you want before it's gone.",
+    bullets: [
+      "Giveaways from Epic, Steam, and more",
+      "Filter by store",
+      "See expiration dates at a glance",
+    ],
+    visual: (
+      <ScreenshotVisual
+        src="/assets/giveway.png"
+        alt="Free Games — track limited-time giveaways across storefronts"
+      />
+    ),
+    reverse: true,
+  },
+  {
+    tag: "Subscriptions",
+    heading: "All your subscriptions,<br />one place.",
+    description:
+      "Browse games available through Prime Gaming, Game Pass, EA Play, Ubisoft+ and Humble Choice without switching between apps. See what's expiring soon and claim before it's gone.",
+    bullets: [
+      "Prime Gaming, Game Pass, EA Play, Ubisoft+, Humble Choice",
+      "Spotlight on featured titles",
+      "Expiration countdowns so you never miss a claim",
+    ],
+    visual: (
+      <ScreenshotVisual
+        src="/assets/subscriptions.png"
+        alt="Subscriptions — browse Prime Gaming, Game Pass, EA Play and more in one place"
+      />
+    ),
   },
 ];
 

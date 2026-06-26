@@ -12,7 +12,7 @@ const cards = [
   },
   {
     title: "Fast details",
-    text: "Jump into media, specs, notes, and recommendations from a single screen.",
+    text: "Jump into description, media and specs from a single screen.",
   },
 ];
 

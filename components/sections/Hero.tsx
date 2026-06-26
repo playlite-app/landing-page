@@ -2,7 +2,7 @@
 
 import { motion } from "framer-motion";
 import Button from "@/components/ui/Button";
-import AppMockup from "@/components/ui/AppMockup";
+import AppDemo from "@/components/ui/Appdemo";
 
 export default function Hero() {
   return (
@@ -70,7 +70,7 @@ export default function Hero() {
             ease: [0.25, 0.1, 0.25, 1],
           }}
         >
-          <AppMockup />
+          <AppDemo />
         </motion.div>
       </div>
     </section>
