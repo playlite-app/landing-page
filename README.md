@@ -1,12 +1,12 @@
-# playlite-landing
+# Playlite - Landing Page
 
 Landing page oficial do [Playlite](https://github.com/playlite-app/playlite) — o gerenciador de biblioteca de jogos offline, open source e construído com Rust + Tauri.
 
 > **Site:** [playlite.app](https://playlite.app) &nbsp;·&nbsp; **App:** [playlite-app/playlite](https://github.com/playlite-app/playlite)
 
----
+##
 
-## Stack
+### Stack
 
 | Tecnologia | Uso |
 |---|---|
@@ -17,15 +17,15 @@ Landing page oficial do [Playlite](https://github.com/playlite-app/playlite) —
 | [Framer Motion](https://www.framer.com/motion) | Animações |
 | [Vercel](https://vercel.com) | Deploy |
 
----
+##
 
-## Relacionados
+### Relacionados
 
 - [playlite-app/playlite](https://github.com/playlite-app/playlite) — O app desktop (Rust + Tauri + React)
 - [playlite.vercel.app](https://playlite.vercel.app/en) — Documentação
 
----
+##
 
-## Licença
+### Licença
 
 MIT © [Alan Gonçalves](https://github.com/alangoncalves)
