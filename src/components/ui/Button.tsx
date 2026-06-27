@@ -4,12 +4,12 @@ import { motion } from "framer-motion";
 import clsx from "clsx";
 
 type ButtonProps = {
-  href?: string;
-  variant?: "primary" | "ghost" | "hero" | "hero-alt";
-  children: React.ReactNode;
-  className?: string;
-  target?: string;
-  rel?: string;
+  readonly href?: string;
+  readonly variant?: "primary" | "ghost" | "hero" | "hero-alt";
+  readonly children: React.ReactNode;
+  readonly className?: string;
+  readonly target?: string;
+  readonly rel?: string;
 };
 
 const variantStyles: Record<NonNullable<ButtonProps["variant"]>, string> = {

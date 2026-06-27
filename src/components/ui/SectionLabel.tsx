@@ -1,8 +1,8 @@
 import clsx from "clsx";
 
 type SectionLabelProps = {
-  children: React.ReactNode;
-  className?: string;
+  readonly children: React.ReactNode;
+  readonly className?: string;
 };
 
 export default function SectionLabel({
