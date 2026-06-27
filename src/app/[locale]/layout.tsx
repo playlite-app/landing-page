@@ -3,7 +3,6 @@ import { NextIntlClientProvider, hasLocale } from "next-intl";
 import { getMessages } from "next-intl/server";
 import { notFound } from "next/navigation";
 import { routing } from "@/i18n/routing";
-// @ts-expect-error Next.js handles global CSS imports
 import "@/app/globals.css";
 
 export const metadata: Metadata = {
