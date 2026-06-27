@@ -166,12 +166,12 @@
     "button": "Download Now"
   },
   "footer": {
-    "tagline": "Your game collection. Unified.",
+    "tagline": "Playlite - Game Library Manager.",
     "links": {
       "features": "Features",
       "docs": "Docs",
       "github": "GitHub",
-      "license": "License"
+      "license": "MIT License"
     }
   }
 }

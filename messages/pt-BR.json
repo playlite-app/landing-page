@@ -166,12 +166,12 @@
     "button": "Baixar Agora"
   },
   "footer": {
-    "tagline": "Sua coleção de jogos. Unificada.",
+    "tagline": "Playlite - Gerenciador de Biblioteca de Jogos.",
     "links": {
       "features": "Recursos",
       "docs": "Docs",
       "github": "GitHub",
-      "license": "Licença"
+      "license": "MIT License"
     }
   }
 }

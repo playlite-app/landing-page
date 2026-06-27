@@ -1,4 +1,5 @@
 import { useTranslations } from "next-intl";
+import { FaGithub } from "react-icons/fa";
 
 export default function Footer() {
   const t = useTranslations("footer");
@@ -12,8 +13,9 @@ export default function Footer() {
             href="https://github.com/playlite-app/playlite"
             target="_blank"
             rel="noopener noreferrer"
-            className="hover:text-[var(--text-1)] transition-colors"
+            className="flex items-center gap-[6px] hover:text-[var(--text-1)] transition-colors"
           >
+            <FaGithub className="w-4 h-4" />
             {t("links.github")}
           </a>
           <a
