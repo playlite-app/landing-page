@@ -12,13 +12,13 @@ export default function Cards() {
   ];
 
   return (
-    <section className="py-[120px]" id="changelog">
+    <section className="pb-[120px]">
       <div className="max-w-[1100px] mx-auto px-6 relative z-[1]">
         <SectionLabel>{t("label")}</SectionLabel>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
           {cards.map((card, index) => (
             <Reveal key={card.key} delay={index * 0.08}>
-              <div className="h-full rounded-[20px] border border-[var(--border-dim)] bg-[var(--bg-card)] p-6">
+              <div className="h-full rounded-[20px] border border-[var(--border-dim)] bg-[var(--bg-card)] p-6 transition-all duration-300 hover:border-[var(--border)] hover:bg-[var(--bg-card-2)] hover:-translate-y-0.5">
                 <p className="text-[0.72rem] uppercase tracking-[0.08em] text-[var(--text-3)] font-display mb-3">
                   0{index + 1}
                 </p>

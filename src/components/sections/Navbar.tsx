@@ -15,8 +15,8 @@ export default function Navbar() {
 
   const navLinks = [
     { label: t("integrations"), href: "#integrations" },
+    { label: t("highlights"), href: "#highlights" },
     { label: t("features"), href: "#features" },
-    { label: t("changelog"), href: "#changelog" },
     { label: t("roadmap"), href: "#roadmap" },
     { label: t("faq"), href: "#faq" },
     { label: t("support"), href: "#support" },
@@ -102,10 +102,9 @@ export default function Navbar() {
               </a>
             </div>
           </div>
-
           <Button
             href="https://github.com/playlite-app/playlite"
-            variant="ghost"
+            variant="primary"
             target="_blank"
             rel="noopener noreferrer"
           >

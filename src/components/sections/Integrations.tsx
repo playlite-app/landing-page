@@ -1,6 +1,29 @@
 import { useTranslations } from "next-intl";
 import Reveal from "@/components/ui/Reveal";
 import SectionLabel from "@/components/ui/SectionLabel";
+import {
+  SiSteam,
+  SiEpicgames,
+  SiUbisoft,
+  SiGogdotcom,
+  SiEa,
+  SiBattledotnet,
+  SiLegacygames,
+} from "react-icons/si";
+import { FaAmazon } from "react-icons/fa";
+import { MdSportsEsports } from "react-icons/md";
+
+const platformIcons: Record<string, React.ReactNode> = {
+  steam: <SiSteam />,
+  epic: <SiEpicgames />,
+  ubisoft: <SiUbisoft />,
+  legacy: <SiLegacygames />,
+  manual: <MdSportsEsports />,
+  gog: <SiGogdotcom />,
+  ea: <SiEa />,
+  amazon: <FaAmazon />,
+  battleNet: <SiBattledotnet />,
+};
 
 export default function Integrations() {
   const t = useTranslations("integrations");
@@ -9,7 +32,10 @@ export default function Integrations() {
   const planned = ["gog", "ea", "amazon", "battleNet"];
 
   return (
-    <section className="py-[120px] border-t border-[var(--border-dim)] bg-[var(--bg)]" id="integrations">
+    <section
+      className="py-[120px] border-t border-[var(--border-dim)] bg-[var(--bg)]"
+      id="integrations"
+    >
       <div className="max-w-[800px] mx-auto px-6 relative z-[1] text-center">
         <Reveal>
           <SectionLabel className="justify-center flex">
@@ -33,8 +59,11 @@ export default function Integrations() {
                 {supported.map((key) => (
                   <span
                     key={key}
-                    className="px-4 py-2 rounded-full bg-[var(--brand-dim)] text-[var(--brand)] border border-[var(--border)] text-sm font-semibold font-display"
+                    className="flex items-center gap-2 px-4 py-2 rounded-full bg-[var(--brand-dim)] text-[var(--brand)] border border-[var(--border)] text-sm font-semibold font-display"
                   >
+                    <span className="text-base leading-none">
+                      {platformIcons[key]}
+                    </span>
                     {t(`platforms.${key}`)}
                   </span>
                 ))}
@@ -49,8 +78,11 @@ export default function Integrations() {
                 {planned.map((key) => (
                   <span
                     key={key}
-                    className="px-4 py-2 rounded-full bg-transparent text-[var(--text-2)] border border-[var(--border-dim)] text-sm font-display"
+                    className="flex items-center gap-2 px-4 py-2 rounded-full bg-transparent text-[var(--text-2)] border border-[var(--border-dim)] text-sm font-display"
                   >
+                    <span className="text-base leading-none">
+                      {platformIcons[key]}
+                    </span>
                     {t(`platforms.${key}`)}
                   </span>
                 ))}

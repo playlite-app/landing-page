@@ -1,8 +1,8 @@
 {
   "navbar": {
     "integrations": "Integrations",
+    "highlights": "Highlights",
     "features": "Features",
-    "changelog": "Changelog",
     "roadmap": "Roadmap",
     "faq": "FAQ",
     "support": "Support",
@@ -14,6 +14,24 @@
     "description": "Organize every game you own — Steam, Epic, GOG, emulators — in one fast, private, offline-first desktop app built with Rust and Tauri.",
     "downloadWindows": "↓ Download for Windows",
     "viewDocs": "View documentation →"
+  },
+  "integrations": {
+    "label": "Supported Platforms",
+    "heading": "Your games, wherever they are.",
+    "description": "Playlite connects directly to your accounts and local folders to unify your library. On Linux, integrations like Epic work seamlessly via Heroic/Wine.",
+    "supported": "Currently supported",
+    "planned": "Coming soon",
+    "platforms": {
+      "steam": "Steam",
+      "epic": "Epic Games",
+      "ubisoft": "Ubisoft Connect",
+      "legacy": "Legacy Games",
+      "manual": "Manual Add (Any game)",
+      "gog": "GOG",
+      "ea": "EA App",
+      "amazon": "Amazon Games",
+      "battleNet": "Battle.net"
+    }
   },
   "featureStrip": {
     "privacy": {
@@ -96,24 +114,6 @@
     "details": {
       "title": "Fast details",
       "text": "Jump into description, media and specs from a single screen."
-    }
-  },
-  "integrations": {
-    "label": "Supported Platforms",
-    "heading": "Your games, wherever they are.",
-    "description": "Playlite connects directly to your accounts and local folders to unify your library. On Linux, integrations like Epic work seamlessly via Heroic/Wine.",
-    "supported": "Currently supported",
-    "planned": "Coming soon",
-    "platforms": {
-      "steam": "Steam",
-      "epic": "Epic Games",
-      "ubisoft": "Ubisoft Connect",
-      "legacy": "Legacy Games",
-      "manual": "Manual Add (Any game)",
-      "gog": "GOG",
-      "ea": "EA App",
-      "amazon": "Amazon Games",
-      "battleNet": "Battle.net"
     }
   },
   "roadmap": {
