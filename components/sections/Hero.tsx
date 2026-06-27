@@ -9,15 +9,6 @@ export default function Hero() {
     <section className="pt-[160px] pb-[100px] text-center relative">
       <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[800px] h-[600px] bg-[radial-gradient(ellipse_at_50%_0%,rgba(124,106,247,0.18)_0%,transparent_70%)] pointer-events-none" />
       <div className="max-w-[1100px] mx-auto px-6 relative z-[1]">
-        <motion.div
-          initial={{ opacity: 0, y: 12 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.5, delay: 0.1 }}
-          className="inline-flex items-center gap-2 text-[0.8rem] font-medium text-[var(--brand)] uppercase tracking-[0.08em] mb-6 px-[14px] py-[6px] bg-[var(--brand-dim)] border border-[var(--border)] rounded-full"
-        >
-          <span className="w-[6px] h-[6px] bg-[var(--brand)] rounded-full" />
-          v4.0.0 now available
-        </motion.div>
         <motion.h1
           initial={{ opacity: 0, y: 16 }}
           animate={{ opacity: 1, y: 0 }}

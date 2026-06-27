@@ -59,7 +59,7 @@ function ScreenshotVisual({
   alt,
 }: Readonly<{ src: string; alt: string }>) {
   return (
-    <div className="rounded-[20px] border border-[var(--border)] bg-[var(--bg-card)] overflow-hidden shadow-[0_20px_60px_rgba(0,0,0,0.4)]">
+    <div className="rounded-[10px] border border-[var(--border)] bg-[var(--bg-card)] overflow-hidden shadow-[0_20px_60px_rgba(0,0,0,0.4)]">
       <img src={src} alt={alt} className="w-full block" />
     </div>
   );

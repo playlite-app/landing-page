@@ -6,13 +6,8 @@ import Image from "next/image";
 
 const navLinks = [
   { label: "Features", href: "#features" },
-  { label: "Docs", href: "https://playlite.vercel.app/en", external: true },
-  {
-    label: "GitHub",
-    href: "https://github.com/playlite-app/playlite",
-    external: true,
-  },
   { label: "Changelog", href: "#changelog" },
+  { label: "Support", href: "#support" },
 ];
 
 export default function Navbar() {
@@ -40,8 +35,6 @@ export default function Navbar() {
             <li key={link.label}>
               <a
                 href={link.href}
-                target={link.external ? "_blank" : undefined}
-                rel={link.external ? "noopener noreferrer" : undefined}
                 className="text-sm text-[var(--text-2)] hover:text-[var(--text-1)] transition-colors duration-200"
               >
                 {link.label}
@@ -57,14 +50,6 @@ export default function Navbar() {
             rel="noopener noreferrer"
           >
             View source
-          </Button>
-          <Button
-            href="https://github.com/playlite-app/playlite/releases/latest"
-            variant="primary"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Download
           </Button>
         </div>
       </div>

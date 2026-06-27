@@ -24,8 +24,8 @@ export default function FeatureStrip() {
       <div className="max-w-[1100px] mx-auto px-6 relative z-[1]">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-[1px] bg-[var(--border-dim)]">
           {strips.map((item, i) => (
-            <Reveal key={item.label} delay={i * 0.1}>
-              <div className="bg-[var(--bg)] px-10 py-10">
+            <Reveal key={item.label} delay={i * 0.1} className="h-full">
+              <div className="h-full bg-[var(--bg)] px-10 py-10">
                 <p className="text-[0.72rem] text-[var(--text-3)] uppercase tracking-[0.08em] mb-[10px] font-display">
                   {item.label}
                 </p>

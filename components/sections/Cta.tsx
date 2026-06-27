@@ -11,7 +11,7 @@ export default function Cta() {
           </h2>
           <p className="text-[1.1rem] text-[var(--text-2)] mb-10 leading-[1.6]">
             Download Playlite today and take control of your game library. 100%
-            offline and open-source.
+            open-source.
           </p>
           <Button
             href="https://github.com/playlite-app/playlite/releases/latest"
