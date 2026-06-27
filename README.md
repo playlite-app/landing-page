@@ -1,6 +1,6 @@
 # playlite-landing
 
-Landing page oficial do [Playlite](https://github.com/playlite-app/playlite) — o gerenciador de biblioteca de jogos offline, open source e construído com Rust + Tauri.
+Landing page oficial do [Playlite](https://github.com/playlite-app/playlite) — Gerenciador de biblioteca de jogos offline, open source e construído com Rust + Tauri.
 
 > **Site:** [playlite.app](https://playlite.app) &nbsp;·&nbsp; **App:** [playlite-app/playlite](https://github.com/playlite-app/playlite)
 
