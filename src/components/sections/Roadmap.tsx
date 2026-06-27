@@ -8,7 +8,7 @@ export default function Roadmap() {
   const items = ["platforms", "linux"];
 
   return (
-    <section className="py-[120px]">
+    <section className="py-[120px]" id="roadmap">
       <div className="max-w-[1100px] mx-auto px-6 relative z-[1]">
         <SectionLabel>{t("label")}</SectionLabel>
         <h2 className="font-display font-bold text-[var(--text-1)] text-[clamp(1.8rem,3.5vw,2.6rem)] tracking-tight leading-[1.15] mb-10">

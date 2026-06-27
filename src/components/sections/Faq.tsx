@@ -5,7 +5,6 @@ import SectionLabel from "@/components/ui/SectionLabel";
 export default function Faq() {
   const t = useTranslations("faq");
 
-  // Array gerado com base nas 6 perguntas mapeadas no JSON
   const questions = [1, 2, 3, 4, 5, 6];
 
   return (

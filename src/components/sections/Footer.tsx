@@ -9,12 +9,6 @@ export default function Footer() {
         <p>{t("tagline")}</p>
         <div className="flex items-center gap-5">
           <a
-            href="#features"
-            className="hover:text-[var(--text-1)] transition-colors"
-          >
-            {t("links.features")}
-          </a>
-          <a
             href="https://github.com/playlite-app/playlite"
             target="_blank"
             rel="noopener noreferrer"
@@ -29,6 +23,14 @@ export default function Footer() {
             className="hover:text-[var(--text-1)] transition-colors"
           >
             {t("links.docs")}
+          </a>
+          <a
+            href="https://github.com/playlite-app/playlite/blob/main/LICENSE"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hover:text-[var(--text-1)] transition-colors"
+          >
+            {t("links.license")}
           </a>
         </div>
       </div>

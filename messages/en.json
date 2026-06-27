@@ -1,7 +1,10 @@
 {
   "navbar": {
+    "integrations": "Integrations",
     "features": "Features",
     "changelog": "Changelog",
+    "roadmap": "Roadmap",
+    "faq": "FAQ",
     "support": "Support",
     "source": "View source"
   },
@@ -167,7 +170,8 @@
     "links": {
       "features": "Features",
       "docs": "Docs",
-      "github": "GitHub"
+      "github": "GitHub",
+      "license": "License"
     }
   }
 }

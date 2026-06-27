@@ -11,7 +11,6 @@ export default function Navbar() {
   const locale = useLocale();
   const pathname = usePathname();
 
-  // Limpa o idioma atual da URL para manter a pessoa na exata mesma página ao trocar
   const currentPathWithoutLocale = pathname.replace(/^\/(en|pt-BR)/, "") || "/";
 
   const navLinks = [
@@ -21,7 +20,6 @@ export default function Navbar() {
     { label: t("roadmap"), href: "#roadmap" },
     { label: t("faq"), href: "#faq" },
     { label: t("support"), href: "#support" },
-   
   ];
 
   return (
@@ -56,13 +54,11 @@ export default function Navbar() {
           ))}
         </ul>
         <div className="flex items-center gap-3">
-          {/* Seletor de Idiomas estilo Vitepress */}
           <div className="relative group">
             <button
               className="flex items-center gap-1 text-[var(--text-2)] hover:text-[var(--text-1)] transition-colors p-2 rounded-lg cursor-pointer"
               aria-label="Trocar idioma"
             >
-              {/* Ícone clássico de Tradução */}
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 24 24"
@@ -71,7 +67,6 @@ export default function Navbar() {
               >
                 <path d="M12.87 15.07l-2.54-2.51.03-.03A17.52 17.52 0 0014.07 6H17V4h-7V2H8v2H1v2h11.17C11.5 7.92 10.44 9.75 9 11.35 8.07 10.32 7.3 9.19 6.69 8h-2c.73 1.63 1.73 3.17 2.98 4.56l-5.09 5.02L4 19l5-5 3.11 3.11.76-2.04zM18.5 10h-2L12 22h2l1.12-3h4.75L21 22h2l-4.5-12zm-2.62 7l1.62-4.33L19.12 17h-3.24z" />
               </svg>
-              {/* Seta para baixo */}
               <svg
                 viewBox="0 0 24 24"
                 fill="none"
@@ -84,8 +79,6 @@ export default function Navbar() {
                 <path d="m6 9 6 6 6-6" />
               </svg>
             </button>
-
-            {/* Menu Dropdown invisível que aparece no hover */}
             <div className="absolute right-0 top-full mt-1 w-[130px] bg-[var(--bg-card)] border border-[var(--border-dim)] rounded-[var(--radius)] shadow-[0_10px_30px_rgba(0,0,0,0.5)] opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 flex flex-col overflow-hidden">
               <a
                 href={`/en${currentPathWithoutLocale}`}
