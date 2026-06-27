@@ -95,6 +95,54 @@
       "text": "Jump into description, media and specs from a single screen."
     }
   },
+  "integrations": {
+    "label": "Supported Platforms",
+    "heading": "Your games, wherever they are.",
+    "description": "Playlite connects directly to your accounts and local folders to unify your library. On Linux, integrations like Epic work seamlessly via Heroic/Wine.",
+    "supported": "Currently supported",
+    "planned": "Coming soon",
+    "platforms": {
+      "steam": "Steam",
+      "epic": "Epic Games",
+      "ubisoft": "Ubisoft Connect",
+      "legacy": "Legacy Games",
+      "manual": "Manual Add (Any game)",
+      "gog": "GOG",
+      "ea": "EA App",
+      "amazon": "Amazon Games",
+      "battleNet": "Battle.net"
+    }
+  },
+  "roadmap": {
+    "label": "Roadmap",
+    "heading": "What's next",
+    "items": {
+      "platforms": {
+        "title": "More Integrations",
+        "desc": "Official support for connecting libraries from EA, Battle.net, Amazon Games, and GOG."
+      },
+      "linux": {
+        "title": "Native Linux Support",
+        "desc": "Official release of the Flatpak version, making installation easy on any Linux distribution."
+      }
+    }
+  },
+  "faq": {
+    "label": "FAQ",
+    "heading": "Frequently Asked Questions",
+    "q1": "Is Playlite safe?",
+    "a1": "Yes. The source code is 100% open for anyone to verify. No personal information is ever saved on remote servers.",
+    "q2": "Can I get banned on Steam/Epic?",
+    "a2": "No. The integration with these platforms uses official methods and is completely safe, acting only as a reader to organize your games.",
+    "q3": "Does it download pirated games?",
+    "a3": "No. Playlite is a game organizer that uses official platforms to list and manage only the games you have legitimately acquired.",
+    "q4": "Is there a Linux/Mac version or just Windows?",
+    "a4": "The Windows version is available, and Linux is currently in testing (to be released as a flatpak soon). There are no plans to develop a Mac version.",
+    "q5": "Do I need to create an account?",
+    "a5": "No, Playlite doesn't require its own account. You only need to authenticate your platform accounts (Steam, Epic) and services (Gamebrain, Gemini) if you want to use their features. Authentication happens locally and no data is sent to the Playlite developer.",
+    "q6": "Is there integration for consoles or mobile?",
+    "a6": "No. Playlite is an organizer designed and focused exclusively on PC games."
+  },
   "support": {
     "label": "Support the Project",
     "heading": "Playlite is and always will be free.",

@@ -15,9 +15,13 @@ export default function Navbar() {
   const currentPathWithoutLocale = pathname.replace(/^\/(en|pt-BR)/, "") || "/";
 
   const navLinks = [
+    { label: t("integrations"), href: "#integrations" },
     { label: t("features"), href: "#features" },
     { label: t("changelog"), href: "#changelog" },
+    { label: t("roadmap"), href: "#roadmap" },
+    { label: t("faq"), href: "#faq" },
     { label: t("support"), href: "#support" },
+   
   ];
 
   return (
