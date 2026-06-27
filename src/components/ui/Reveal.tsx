@@ -4,9 +4,9 @@ import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
 
 type RevealProps = {
-  children: React.ReactNode;
-  className?: string;
-  delay?: number;
+  readonly children: React.ReactNode;
+  readonly className?: string;
+  readonly delay?: number;
 };
 
 export default function Reveal({

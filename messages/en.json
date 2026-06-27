@@ -1,0 +1,125 @@
+{
+  "navbar": {
+    "features": "Features",
+    "changelog": "Changelog",
+    "support": "Support",
+    "source": "View source"
+  },
+  "hero": {
+    "heading1": "Your game collection.",
+    "heading2": "Unified.",
+    "description": "Organize every game you own — Steam, Epic, GOG, emulators — in one fast, private, offline-first desktop app built with Rust and Tauri.",
+    "downloadWindows": "↓ Download for Windows",
+    "viewDocs": "View documentation →"
+  },
+  "featureStrip": {
+    "privacy": {
+      "label": "Privacy",
+      "heading": "Offline first.",
+      "text": "Your library lives on your machine. No accounts, no telemetry, no cloud dependency."
+    },
+    "performance": {
+      "label": "Performance",
+      "heading": "Built on Rust\nand Tauri.",
+      "text": "Opens in under a second. Minimal memory footprint. More RAM for your games."
+    },
+    "openSource": {
+      "label": "Open Source",
+      "heading": "MIT licensed,\nfully auditable.",
+      "text": "Read the source, contribute features, or fork it. The code is yours to inspect."
+    }
+  },
+  "features": {
+    "wishlist": {
+      "tag": "Wishlist",
+      "heading": "Find your next game<br />by what you love.",
+      "description": "Search for games by characteristics — genre, mood, mechanics — using the GameBrain API. Add exactly what you want to your list, not what a storefront recommends.",
+      "bullets": [
+        "Search by genre, theme, and playstyle",
+        "Browse rich metadata before you add"
+      ]
+    },
+    "gameDetails": {
+      "tag": "Game Details",
+      "heading": "Everything about<br />a game, in one place.",
+      "description": "The game details window opens into four tabs: description, media, similar games and technical specs. So you know exactly what you're installing before you hit download.",
+      "bullets": [
+        "Screenshots and trailers in the Media tab",
+        "System requirements and language support from PCGamingWiki",
+        "Similar games recommended from your own library context"
+      ]
+    },
+    "playlist": {
+      "tag": "Playlist",
+      "heading": "Queue up your<br />next adventure.",
+      "description": "Build an ordered playlist of games you want to play next. Drag to reorder, launch directly from the queue, and never lose track of what you were going to play.",
+      "bullets": [
+        "Drag-and-drop reordering",
+        "Launch games directly from the playlist",
+        "Keep your backlog organized and intentional"
+      ]
+    },
+    "freeGames": {
+      "tag": "Free Games",
+      "heading": "Never miss a<br />free game again.",
+      "description": "Playlite tracks limited-time giveaways from Epic Games, Steam, and other storefronts in one place. Claim what you want before it's gone.",
+      "bullets": [
+        "Giveaways from Epic, Steam, and more",
+        "Filter by store",
+        "See expiration dates at a glance"
+      ]
+    },
+    "subscriptions": {
+      "tag": "Subscriptions",
+      "heading": "All your subscriptions,<br />one place.",
+      "description": "Browse games available through Prime Gaming, Game Pass, EA Play, Ubisoft+ and Humble Choice without switching between apps.",
+      "bullets": [
+        "Prime Gaming, Game Pass, EA Play, Ubisoft+, Humble Choice",
+        "Spotlight on featured titles",
+        "Expiration countdowns so you never miss a claim"
+      ]
+    }
+  },
+  "cards": {
+    "label": "Core Features",
+    "unified": {
+      "title": "Unified library",
+      "text": "See every launcher, emulator, and collection in one place."
+    },
+    "wishlist": {
+      "title": "Smart wishlist",
+      "text": "Track the games you want without losing context on why you wanted them."
+    },
+    "details": {
+      "title": "Fast details",
+      "text": "Jump into description, media and specs from a single screen."
+    }
+  },
+  "support": {
+    "label": "Support the Project",
+    "heading": "Playlite is and always will be free.",
+    "description": "Playlite will remain free and open source. Donations are entirely optional and help fund the development and maintenance of the project.",
+    "kofi": "Support with a coffee",
+    "githubSponsors": "Sponsor on GitHub",
+    "pix": {
+      "label": "PIX",
+      "badge": "Brazil only",
+      "pixKeyLabel": "PIX Key",
+      "copy": "Copy key",
+      "copied": "Copied!"
+    }
+  },
+  "cta": {
+    "heading": "Ready to unify your collection?",
+    "description": "Download Playlite today and take control of your game library. 100% open-source.",
+    "button": "Download Now"
+  },
+  "footer": {
+    "tagline": "Your game collection. Unified.",
+    "links": {
+      "features": "Features",
+      "docs": "Docs",
+      "github": "GitHub"
+    }
+  }
+}

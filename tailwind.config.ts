@@ -2,9 +2,9 @@ import type { Config } from "tailwindcss";
 
 const config: Config = {
   content: [
-    "./pages/**/*.{js,ts,jsx,tsx,mdx}",
-    "./components/**/*.{js,ts,jsx,tsx,mdx}",
-    "./app/**/*.{js,ts,jsx,tsx,mdx}",
+    "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
+    "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
+    "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
     extend: {
@@ -35,9 +35,9 @@ const config: Config = {
       },
       keyframes: {
         scanline: {
-          "0%":   { top: "0%",   opacity: "0" },
-          "5%":   { opacity: "0.7" },
-          "95%":  { opacity: "0.5" },
+          "0%": { top: "0%", opacity: "0" },
+          "5%": { opacity: "0.7" },
+          "95%": { opacity: "0.5" },
           "100%": { top: "100%", opacity: "0" },
         },
       },

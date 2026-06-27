@@ -1,16 +1,19 @@
 "use client";
 
 import { motion } from "framer-motion";
+import { useTranslations } from "next-intl";
 import Button from "@/components/ui/Button";
 import Image from "next/image";
 
-const navLinks = [
-  { label: "Features", href: "#features" },
-  { label: "Changelog", href: "#changelog" },
-  { label: "Support", href: "#support" },
-];
-
 export default function Navbar() {
+  const t = useTranslations("navbar");
+
+  const navLinks = [
+    { label: t("features"), href: "#features" },
+    { label: t("changelog"), href: "#changelog" },
+    { label: t("support"), href: "#support" },
+  ];
+
   return (
     <motion.nav
       initial={{ opacity: 0, y: -8 }}
@@ -49,7 +52,7 @@ export default function Navbar() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            View source
+            {t("source")}
           </Button>
         </div>
       </div>

@@ -1,18 +1,10 @@
 "use client";
 
 import { useState } from "react";
+import { useTranslations } from "next-intl";
 import Reveal from "@/components/ui/Reveal";
 
 const PIX_KEY = "seu-email@exemplo.com"; // substitua pela chave PIX real
-
-const donors = [
-  { label: "Ko-fi", href: "https://ko-fi.com/playlite", icon: KofiIcon },
-  {
-    label: "GitHub Sponsors",
-    href: "https://github.com/sponsors/playlite-app",
-    icon: GithubIcon,
-  },
-];
 
 function KofiIcon() {
   return (
@@ -39,6 +31,7 @@ function PixIcon() {
 }
 
 function CopyButton({ text }: { readonly text: string }) {
+  const t = useTranslations("support.pix");
   const [copied, setCopied] = useState(false);
 
   function handleCopy() {
@@ -62,7 +55,7 @@ function CopyButton({ text }: { readonly text: string }) {
               clipRule="evenodd"
             />
           </svg>
-          Copiado!
+          {t("copied")}
         </>
       ) : (
         <>
@@ -76,7 +69,7 @@ function CopyButton({ text }: { readonly text: string }) {
             <rect x="7" y="7" width="10" height="10" rx="2" />
             <path d="M3 13V4a1 1 0 011-1h9" />
           </svg>
-          Copiar chave
+          {t("copy")}
         </>
       )}
     </button>
@@ -84,6 +77,23 @@ function CopyButton({ text }: { readonly text: string }) {
 }
 
 export default function Support() {
+  const t = useTranslations("support");
+
+  const donors = [
+    {
+      label: "Ko-fi",
+      href: "https://ko-fi.com/playlite",
+      description: t("kofi"),
+      icon: KofiIcon,
+    },
+    {
+      label: "GitHub Sponsors",
+      href: "https://github.com/sponsors/playlite-app",
+      description: t("githubSponsors"),
+      icon: GithubIcon,
+    },
+  ];
+
   return (
     <section
       className="py-[120px] border-t border-[var(--border-dim)]"
@@ -93,22 +103,20 @@ export default function Support() {
         <Reveal>
           <div className="text-center mb-12">
             <span className="inline-block text-[0.72rem] font-semibold text-[var(--brand)] uppercase tracking-[0.08em] mb-4 font-display">
-              Support the Project
+              {t("label")}
             </span>
             <h2 className="font-display font-bold text-[var(--text-1)] text-[clamp(1.8rem,3.5vw,2.6rem)] tracking-tight leading-[1.15] mb-4">
-              Playlite é e sempre será gratuito.
+              {t("heading")}
             </h2>
             <p className="text-base text-[var(--text-2)] leading-[1.7] max-w-[540px] mx-auto">
-              Playlite continuará sendo gratuito e open source. As doações são
-              totalmente opcionais e ajudam a financiar o desenvolvimento e a
-              manutenção do projeto.
+              {t("description")}
             </p>
           </div>
         </Reveal>
 
         <Reveal delay={0.1}>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-4">
-            {donors.map(({ label, href, icon: Icon }) => (
+            {donors.map(({ label, href, description, icon: Icon }) => (
               <a
                 key={label}
                 href={href}
@@ -124,9 +132,7 @@ export default function Support() {
                     {label}
                   </p>
                   <p className="text-[0.72rem] text-[var(--text-3)] mt-[2px]">
-                    {label === "Ko-fi"
-                      ? "Apoie com um café"
-                      : "Sponsor no GitHub"}
+                    {description}
                   </p>
                 </div>
                 <svg
@@ -156,15 +162,14 @@ export default function Support() {
               </span>
               <div>
                 <p className="text-sm font-display font-semibold text-[var(--text-1)]">
-                  PIX
+                  {t("pix.label")}
                 </p>
                 <p className="text-[0.72rem] text-[var(--text-3)] mt-[2px]">
-                  Exclusivo para o Brasil
+                  {t("pix.badge")}
                 </p>
               </div>
             </div>
             <div className="flex flex-col sm:flex-row items-center gap-6">
-              {/* QR Code placeholder — substitua pela img real */}
               <div className="shrink-0 w-[120px] h-[120px] rounded-lg bg-white p-2 flex items-center justify-center">
                 <img
                   src="/assets/pix-qrcode.png"
@@ -175,7 +180,7 @@ export default function Support() {
               <div className="flex flex-col gap-3 flex-1 w-full">
                 <div>
                   <p className="text-[0.72rem] text-[var(--text-3)] font-display uppercase tracking-[0.06em] mb-[6px]">
-                    Chave PIX
+                    {t("pix.pixKeyLabel")}
                   </p>
                   <p className="text-sm text-[var(--text-2)] font-mono bg-[var(--bg-card-2)] border border-[var(--border-dim)] rounded-lg px-4 py-3 break-all">
                     {PIX_KEY}

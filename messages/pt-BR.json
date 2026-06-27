@@ -1,0 +1,125 @@
+{
+  "navbar": {
+    "features": "Recursos",
+    "changelog": "Changelog",
+    "support": "Apoiar",
+    "source": "Ver código-fonte"
+  },
+  "hero": {
+    "heading1": "Sua coleção de jogos.",
+    "heading2": "Unificada.",
+    "description": "Organize todos os seus jogos — Steam, Epic, GOG, emuladores — em um app desktop rápido, privado e offline, feito com Rust e Tauri.",
+    "downloadWindows": "↓ Baixar para Windows",
+    "viewDocs": "Ver documentação →"
+  },
+  "featureStrip": {
+    "privacy": {
+      "label": "Privacidade",
+      "heading": "Offline primeiro.",
+      "text": "Sua biblioteca fica na sua máquina. Sem contas, sem telemetria, sem dependência de nuvem."
+    },
+    "performance": {
+      "label": "Desempenho",
+      "heading": "Feito com Rust\ne Tauri.",
+      "text": "Abre em menos de um segundo. Consumo mínimo de memória. Mais RAM para seus jogos."
+    },
+    "openSource": {
+      "label": "Código Aberto",
+      "heading": "Licença MIT,\ntotalmente auditável.",
+      "text": "Leia o código, contribua com recursos ou faça um fork. O código é seu para inspecionar."
+    }
+  },
+  "features": {
+    "wishlist": {
+      "tag": "Lista de Desejos",
+      "heading": "Encontre seu próximo jogo<br />pelo que você ama.",
+      "description": "Pesquise jogos por características — gênero, mood, mecânicas — usando a API GameBrain. Adicione exatamente o que você quer, não o que uma loja recomenda.",
+      "bullets": [
+        "Busca por gênero, tema e estilo de jogo",
+        "Veja metadados ricos antes de adicionar"
+      ]
+    },
+    "gameDetails": {
+      "tag": "Detalhes do Jogo",
+      "heading": "Tudo sobre<br />um jogo, em um lugar.",
+      "description": "A janela de detalhes abre em quatro abas: descrição, mídia, jogos similares e especificações técnicas. Saiba exatamente o que está instalando antes de baixar.",
+      "bullets": [
+        "Screenshots e trailers na aba de Mídia",
+        "Requisitos de sistema e suporte a idiomas do PCGamingWiki",
+        "Jogos similares recomendados a partir da sua biblioteca"
+      ]
+    },
+    "playlist": {
+      "tag": "Playlist",
+      "heading": "Monte a fila da<br />sua próxima aventura.",
+      "description": "Crie uma playlist ordenada dos jogos que quer jogar. Arraste para reordenar, inicie direto da fila e nunca perca o controle do seu backlog.",
+      "bullets": [
+        "Reordenação por arrastar e soltar",
+        "Inicie jogos diretamente da playlist",
+        "Mantenha seu backlog organizado"
+      ]
+    },
+    "freeGames": {
+      "tag": "Jogos Grátis",
+      "heading": "Nunca perca um<br />jogo grátis de novo.",
+      "description": "O Playlite monitora ofertas por tempo limitado da Epic Games, Steam e outras lojas em um só lugar. Resgate o que quiser antes que acabe.",
+      "bullets": [
+        "Ofertas da Epic, Steam e mais",
+        "Filtre por loja",
+        "Veja as datas de expiração de relance"
+      ]
+    },
+    "subscriptions": {
+      "tag": "Assinaturas",
+      "heading": "Todas as suas assinaturas,<br />um lugar só.",
+      "description": "Veja os jogos disponíveis no Prime Gaming, Game Pass, EA Play, Ubisoft+ e Humble Choice sem trocar de app.",
+      "bullets": [
+        "Prime Gaming, Game Pass, EA Play, Ubisoft+, Humble Choice",
+        "Destaque para títulos em evidência",
+        "Contagem regressiva para não perder nenhum resgate"
+      ]
+    }
+  },
+  "cards": {
+    "label": "Recursos Principais",
+    "unified": {
+      "title": "Biblioteca unificada",
+      "text": "Veja cada launcher, emulador e coleção em um só lugar."
+    },
+    "wishlist": {
+      "title": "Lista de desejos inteligente",
+      "text": "Acompanhe os jogos que você quer sem perder o contexto do porquê os queria."
+    },
+    "details": {
+      "title": "Detalhes rápidos",
+      "text": "Acesse descrição, mídia e especificações em uma única tela."
+    }
+  },
+  "support": {
+    "label": "Apoie o Projeto",
+    "heading": "Playlite é e sempre será gratuito.",
+    "description": "Playlite continuará sendo gratuito e open source. As doações são totalmente opcionais e ajudam a financiar o desenvolvimento e a manutenção do projeto.",
+    "kofi": "Apoie com um café",
+    "githubSponsors": "Sponsor no GitHub",
+    "pix": {
+      "label": "PIX",
+      "badge": "Exclusivo para o Brasil",
+      "pixKeyLabel": "Chave PIX",
+      "copy": "Copiar chave",
+      "copied": "Copiado!"
+    }
+  },
+  "cta": {
+    "heading": "Pronto para unificar sua coleção?",
+    "description": "Baixe o Playlite hoje e assuma o controle da sua biblioteca. 100% offline e open source.",
+    "button": "Baixar Agora"
+  },
+  "footer": {
+    "tagline": "Sua coleção de jogos. Unificada.",
+    "links": {
+      "features": "Recursos",
+      "docs": "Docs",
+      "github": "GitHub"
+    }
+  }
+}

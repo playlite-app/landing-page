@@ -1,10 +1,13 @@
 "use client";
 
 import { motion } from "framer-motion";
+import { useTranslations } from "next-intl";
 import Button from "@/components/ui/Button";
 import AppDemo from "@/components/ui/AppDemo";
 
 export default function Hero() {
+  const t = useTranslations("hero");
+
   return (
     <section className="pt-[160px] pb-[100px] text-center relative">
       <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[800px] h-[600px] bg-[radial-gradient(ellipse_at_50%_0%,rgba(124,106,247,0.18)_0%,transparent_70%)] pointer-events-none" />
@@ -15,9 +18,9 @@ export default function Hero() {
           transition={{ duration: 0.55, delay: 0.2 }}
           className="font-display font-bold tracking-[-0.04em] leading-[1.08] text-[var(--text-1)] text-[clamp(2.6rem,6vw,4.2rem)] max-w-[780px] mx-auto mb-5"
         >
-          Your game collection.{" "}
+          {t("heading1")}{" "}
           <em className="not-italic bg-gradient-to-br from-violet-400 via-[var(--brand)] to-[#c4b5fd] bg-clip-text text-transparent">
-            Unified.
+            {t("heading2")}
           </em>
         </motion.h1>
         <motion.p
@@ -26,8 +29,7 @@ export default function Hero() {
           transition={{ duration: 0.55, delay: 0.3 }}
           className="text-[1.1rem] text-[var(--text-2)] max-w-[520px] mx-auto mb-10 leading-[1.65] font-light"
         >
-          Organize every game you own — Steam, Epic, GOG, emulators — in one
-          fast, private, offline-first desktop app built with Rust and Tauri.
+          {t("description")}
         </motion.p>
         <motion.div
           initial={{ opacity: 0, y: 16 }}
@@ -41,7 +43,7 @@ export default function Hero() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            ↓ Download for Windows
+            {t("downloadWindows")}
           </Button>
           <Button
             href="https://playlite.vercel.app/en"
@@ -49,7 +51,7 @@ export default function Hero() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            View documentation →
+            {t("viewDocs")}
           </Button>
         </motion.div>
         <motion.div
