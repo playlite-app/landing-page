@@ -47,7 +47,7 @@ export default function Support() {
     },
     {
       label: "GitHub Sponsors",
-      href: "https://github.com/sponsors/playlite-app",
+      href: "https://github.com/sponsors/Alan-oliveir",
       description: t("githubSponsors"),
       icon: SiGithubsponsors,
     },
