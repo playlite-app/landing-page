@@ -41,7 +41,7 @@ export default function Support() {
   const donors = [
     {
       label: "Ko-fi",
-      href: "https://ko-fi.com/playlite",
+      href: "https://ko-fi.com/alandeogoncalves",
       description: t("kofi"),
       icon: SiKofi,
     },
